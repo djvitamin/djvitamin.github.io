@@ -1,3 +1,5 @@
+/* Dante's custom CSS! */
+
 /* Color 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help, .footer {
@@ -151,10 +153,21 @@ h1 {
     margin-bottom: 1.3rem;
     margin-top: 2rem;
     text-transform: uppercase;
-    color: #f5f585;
- 
+    background-color: #f5f585;
+    display: block;
+   border-radius: 5px;
+   padding: 2px 9px;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
+.portfolioTitle a {
+  text-decoration: none;
+}
+.portfolioTitle a:hover {
+  color: #f5f585;
+  text-decoration: none;
+}
 
 .navigation.portfolioTitle {
     margin-bottom: 3rem;
@@ -172,14 +185,19 @@ h1 {
 
 
 div.navigation > h6:nth-child(1) {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 2px;
+    border-bottom-left-radius: 0px;
+}
+div.navigation > h6:nth-child(2) {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    margin-top: 1px;
 }
 
-div.navigation > h6:nth-child(2) {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
+
 
 .section.categories .container { /* space between Portfolio rows */
     margin-bottom: 4rem;
@@ -391,8 +409,7 @@ a:hover img.u-max-full-width {
 }
   .section.get-help {
     padding: 6rem 0 2rem;
-    -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
-    clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
+
   }  
 }
 
@@ -403,10 +420,12 @@ a:hover img.u-max-full-width {
   }
   .section.get-help {
     padding: 5rem 0 3rem;
+   -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
+    clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
   }  
 .container {
     width: 90%;
-}  
+  }  
   .hero {
     padding-bottom: 12rem;
     text-align: left;
@@ -432,7 +451,28 @@ a:hover img.u-max-full-width {
   }
   a.imageThumb {
     max-height: 195px;
+  }
+
+.portfolioTitle {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
 }
+div.navigation > h6:nth-child(1) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-bottom: 2px;
+  border-bottom-left-radius: 5px;
+}
+
+div.navigation > h6:nth-child(2) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-top: 1px;
+  border-top-right-radius: 5px;
+}
+
+} 
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
