@@ -205,6 +205,7 @@ div.navigation > h6:nth-child(2) {
 .categories .section-description {
     margin-bottom: 0.9rem;
     font-size: 1.7rem;
+    text-wrap: balance;
 }
 .caption {
     margin-top: 1.5rem;
