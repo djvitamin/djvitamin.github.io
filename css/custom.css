@@ -458,6 +458,7 @@ a:hover img.u-max-full-width {
     display: inline-block;
     margin-left: 0;
     margin-right: 0;
+    min-width: 175px;
 }
 div.navigation > h6:nth-child(1) {
   border-top-right-radius: 0px;
