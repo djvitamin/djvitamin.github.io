@@ -5,10 +5,11 @@
 .get-help, .footer {
     background-color: #2C449D;
     background-image: url(../images/flatiron-bkgd.jpg);
-    background-position: center; /* Center the image */
+    background-position: top center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: 100%; /* Cover = Resize the background image to cover the entire container */
 }
+
 
 h4.type  {
   background-color: #ff5239;
@@ -58,6 +59,9 @@ h3.section-heading {
   border-bottom: solid 5px #ff5239;
 }
 
+.sticky + .section.categories {
+  padding-top: 185px;
+}
 
 /* Color 4
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -167,6 +171,17 @@ h1 {
 .portfolioTitle a:hover {
   color: #f5f585;
   text-decoration: none;
+}
+
+.navigation {
+  text-align: center;
+  background-color: #2C449D;
+  background-image: url(../images/flatiron-bkgd.jpg);
+  background-position: left -230px; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%; /* Cover = Resize the background image to cover the entire container */
+  padding: 0.1rem 0 1rem 0;
+  z-index: 99;
 }
 
 .navigation.portfolioTitle {
@@ -288,6 +303,7 @@ a:hover img.u-max-full-width {
       list-style: none;
       padding-left: 0;
       margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
       ul.icons li {
@@ -409,7 +425,7 @@ a:hover img.u-max-full-width {
     max-height: 215px;
 }
   .section.get-help {
-    padding: 6rem 0 2rem;
+    padding: 3rem 0 0rem;
 
   }  
 }
@@ -420,10 +436,24 @@ a:hover img.u-max-full-width {
     padding: 8rem 0 7rem;
   }
   .section.get-help {
-    padding: 5rem 0 3rem;
-   -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
-    clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
-  }  
+    padding: 5rem 0 0rem;
+   /* -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
+    clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0); */
+  } 
+ .navigation {
+    -webkit-clip-path: polygon(100% -1%, 100% 72%, 50% 100%, 0 72%, 0 -1%);
+    clip-path: polygon(100% -1%, 100% 72%, 50% 100%, 0 72%, 0 -1%);
+    padding: 0 0 2.5rem 0;
+    background-position: left -340px; /* Center the image */
+ }  
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 .container {
     width: 90%;
   }  
@@ -497,7 +527,7 @@ div.navigation > h6:nth-child(2) {
     padding: 16rem 0 14rem;
   }
   .section-description {
-    max-width: 60%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
