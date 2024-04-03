@@ -231,8 +231,8 @@ div.navigation > h6:nth-child(2) {
 }
 h4.type {
     margin: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     font-size: 2.1rem;
     padding: 0.5rem 0;
     font-weight: 400;
@@ -252,8 +252,8 @@ a.imageThumb {
     overflow: hidden;
     display: block;
     max-height: 315px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     -webkit-box-shadow: 5px 5px 8px -4px rgba(0,0,0,0.35);
     -moz-box-shadow: 5px 5px 8px -4px rgba(0,0,0,0.35);
     box-shadow: 5px 5px 8px -4px rgba(0,0,0,0.35);
