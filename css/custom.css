@@ -3,8 +3,9 @@
 /* Color 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help, .footer {
-    background-color: #2C449D;
-    background-image: url(../images/flatiron-bkgd.jpg);
+    background: rgb(14,31,47);
+  background: linear-gradient(180deg, rgba(14,31,47,1) 0%, rgba(30,52,73,1) 90%);
+    /* background-image: url(../images/flatiron-bkgd.jpg); */
     background-position: top center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: 100%; /* Cover = Resize the background image to cover the entire container */
@@ -12,31 +13,31 @@
 
 
 h4.type  {
-  background-color: #ff5239;
+  background-color: #132538;
 }
 
 h4.type span {
-    color: #c9d6df;
+    color: #97b1bd;
 }
  h1 {
-    color: #fff;
+    color: #0e1f2f;
 }
 
 
 /* Color 2 (accent)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
-  background-color: #FF5239;
+  background-color: #fff;
 }
 .footer a {
-  color: #f5f585;
+  color: #fec44a;
 }
 .footer a:hover {
   color: #5f85a0;
 }
 
 h3.section-heading {
-    color: #1f3a95;
+    color: #223d56;
 }
 
 /* Color 3 (Scroll down indicator)
@@ -52,11 +53,11 @@ h3.section-heading {
 }
 
  .avatar span, .icon.style2 {
-  border: solid 1px #5D82F1;
+  border: solid 1px #3d6892;
 }
 
 .section.categories {
-  border-bottom: solid 5px #ff5239;
+  border-bottom: solid 5px #7e9caa;
 }
 
 .sticky + .section.categories {
@@ -71,8 +72,11 @@ h3.section-heading {
 
 
 
-.categories .section-description, h3.section-heading span, .caption {
-    color: #5a5d65;  
+h3.section-heading span {
+    color: #597a89;  
+}
+.categories .section-description, .caption {
+    color: #182b3f;  
 }
 
 
@@ -83,17 +87,17 @@ h3.section-heading {
    color: #fff;
 }
 .categories, body {
-  background-color:#c6c9d2;
+  background-color:#97b1bd;
 }
 a.icon.style2  {
-  color:#c6c9d2;
+  color:#ffdf9c;
 }
 .portfolioTitle {
-  color:#1f3a95;
+  color:#1e3449;
 }
 
 .categories {
-  color: #fff;
+  color: #ffdf9c;
 }
 
 
@@ -134,30 +138,53 @@ h1,h2,h3,h4,h5 {
 h1 {
   letter-spacing: -0.25rem;
   display: inline-block;
+  padding: 0.9rem 2.7rem;
+
+}
+.nametag {
+  background-color: #174168;
   padding: 6px 19px;
   border-radius: 10px;
-  border: solid 2px white;
+  border: solid 6px white;
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 2rem 0 0rem 0;
 }
 
+.nametag h4,  .nametag h6 {
+  color: #fff;
+}
+
+.nametag h4 {
+  margin-bottom: 0rem;
+  font-size: 4.3rem;
+  line-height: 3.5rem;
+}
+.nametag h6 {
+  margin-bottom: 1.2rem;
+  font-weight: 200;
+  font-size: 2rem;
+}
 
 .get-help .section-description h2 {
     font-size: 3.1rem;
     font-weight: 700;
-    color: #fff;
+    color: #fec44a;
     margin-bottom: 1px;
 }
 
 .get-help .section-description p {
     font-size: 2.15rem;
     font-weight: 700;
-      color: #fff;
+      color: #ffdf9b;
 }
 
 .portfolioTitle {
     margin-bottom: 1.3rem;
     margin-top: 2rem;
     text-transform: uppercase;
-    background-color: #f5f585;
+    background-color: #fec44a;
     display: block;
    border-radius: 5px;
    padding: 2px 9px;
@@ -167,6 +194,7 @@ h1 {
 
 .portfolioTitle a {
   text-decoration: none;
+  color: #4878a6;
 }
 .portfolioTitle a:hover {
   color: #f5f585;
@@ -175,8 +203,8 @@ h1 {
 
 .navigation {
   text-align: center;
-  background-color: #2C449D;
-  background-image: url(../images/flatiron-bkgd.jpg);
+  background-color: #1e3449;
+  /* background-image: url(../images/flatiron-bkgd.jpg); */
   background-position: left -230px; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 100%; /* Cover = Resize the background image to cover the entire container */
@@ -195,7 +223,7 @@ h1 {
 }
 
 .portfolioTitle.link {
-    background-color: #5D82F1;
+    background-color: #184168;
 }
 
 
@@ -354,12 +382,12 @@ a:hover img.u-max-full-width {
       }
 
       .icon.style2:hover {
-        background-color: #FF5239;
-        border: solid 1px #FF5239;
+        background-color: #fec44a;
+        border: solid 1px #fec44a;
       }
 
       a.icon.style2:hover {
-        color: #fff;
+        color: #1e3549;
       }
 
       @media screen and (max-width: 736px) {
