@@ -73,7 +73,7 @@ h3.section-heading {
 
 
 h3.section-heading span {
-    color: #597a89;  
+    color: #496775;  
 }
 .categories .section-description, .caption {
     color: #182b3f;  
@@ -250,6 +250,10 @@ div.navigation > h6:nth-child(2) {
     font-size: 1.7rem;
     text-wrap: balance;
 }
+.section-description strong {
+    color: #496775;
+}
+
 .caption {
     margin-top: 2rem;
     text-align: left;
