@@ -61,7 +61,7 @@ h3.section-heading {
 }
 
 .sticky + .section.categories {
-  padding-top: 185px;
+  padding-top: 155px;
 }
 
 /* Color 4
@@ -246,7 +246,7 @@ div.navigation > h6:nth-child(2) {
     margin-bottom: 4rem;
 }
 .categories .section-description {
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.3rem;
     font-size: 1.7rem;
     text-wrap: balance;
 }
@@ -409,6 +409,9 @@ a:hover img.u-max-full-width {
 .section {
   padding: 8rem 0 3rem;
   text-align: center;
+}
+.section .row {
+    margin-top: 3rem;
 }
 .section-heading,
 .section-description {
