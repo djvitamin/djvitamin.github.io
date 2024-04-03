@@ -251,8 +251,10 @@ div.navigation > h6:nth-child(2) {
     text-wrap: balance;
 }
 .caption {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-align: left;
+    margin-left: 0.3rem;
+}
 }
 .container .row {
     margin-top: 2rem;
