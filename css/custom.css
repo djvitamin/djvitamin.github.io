@@ -135,11 +135,11 @@ a.hidden {visibility: hidden;}
 h1,h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
 }
-h1 {
+h1.section-heading {
   letter-spacing: -0.25rem;
   display: inline-block;
-  padding: 0.9rem 2.7rem;
-
+  padding: 0rem 3.5rem 0.3rem 3.5rem;
+  margin-bottom: 1.6rem;
 }
 .nametag {
   background-color: #174168;
@@ -149,7 +149,7 @@ h1 {
   max-width: fit-content;
   margin: auto;
   margin-bottom: 3rem;
-  padding: 2rem 0 0rem 0;
+  padding: 1.4rem 0 0rem 0;
 }
 
 .nametag h4,  .nametag h6 {
@@ -158,13 +158,13 @@ h1 {
 
 .nametag h4 {
   margin-bottom: 0rem;
-  font-size: 4.3rem;
+  font-size: 3.75rem;
   line-height: 3.5rem;
 }
 .nametag h6 {
   margin-bottom: 1.2rem;
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .get-help .section-description h2 {
@@ -177,7 +177,12 @@ h1 {
 .get-help .section-description p {
     font-size: 2.15rem;
     font-weight: 700;
-      color: #ffdf9b;
+    color: #ffdf9b;
+    margin-bottom: 1.2rem;  
+}
+
+.section.get-help .section-description {
+  margin-bottom: 1rem;
 }
 
 .portfolioTitle {
@@ -336,8 +341,8 @@ a:hover img.u-max-full-width {
       cursor: default;
       list-style: none;
       padding-left: 0;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
     }
 
       ul.icons li {
