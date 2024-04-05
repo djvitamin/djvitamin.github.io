@@ -3,17 +3,17 @@
 /* Color 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help, .footer {
-    background: rgb(14,31,47);
-  background: linear-gradient(180deg, rgba(14,31,47,1) 0%, rgba(30,52,73,1) 90%);
-    /* background-image: url(../images/flatiron-bkgd.jpg); */
-    background-position: top center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 100%; /* Cover = Resize the background image to cover the entire container */
+
+  background-image: linear-gradient(to bottom, rgb(41 92 140 / 40%), rgb(22 43 62)), url(../images/code-background.png);
+  background-size: cover;
+
+  
+
 }
 
 
 h4.type  {
-  background-color: #132538;
+  background-color: #164168;
 }
 
 h4.type span {
@@ -61,7 +61,7 @@ h3.section-heading {
 }
 
 .sticky + .section.categories {
-  padding-top: 185px;
+  padding-top: 220px;
 }
 
 /* Color 4
@@ -168,14 +168,12 @@ h1.section-heading {
 }
 
 .get-help .section-description h2 {
-    font-size: 3.1rem;
     font-weight: 700;
     color: #fec44a;
     margin-bottom: 1px;
 }
 
 .get-help .section-description p {
-    font-size: 2.15rem;
     font-weight: 700;
     color: #ffdf9b;
     margin-bottom: 1.2rem;  
@@ -192,7 +190,7 @@ h1.section-heading {
     background-color: #fec44a;
     display: block;
    border-radius: 5px;
-   padding: 2px 9px;
+   padding: 7px 9px;
     margin-left: 10rem;
     margin-right: 10rem;
 }
@@ -208,7 +206,7 @@ h1.section-heading {
 
 .navigation {
   text-align: center;
-  background-color: #1e3449;
+  background-color: #162b3e;
   /* background-image: url(../images/flatiron-bkgd.jpg); */
   background-position: left -230px; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -457,6 +455,17 @@ a:hover img.u-max-full-width {
   font-weight: 300;
 }
 
+/* Badge
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.badge {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+.badge img {
+    width: 132px;
+    height: auto;
+  }
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -478,7 +487,7 @@ a:hover img.u-max-full-width {
     padding: 8rem 0 7rem;
   }
   .section.get-help {
-    padding: 5rem 0 0rem;
+    padding: 3rem 0 0rem;
    /* -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
     clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0); */
   } 
@@ -488,6 +497,19 @@ a:hover img.u-max-full-width {
     padding: 0 0 2.5rem 0;
     background-position: left -340px; /* Center the image */
  }  
+
+/* Bigger than 850 */
+@media (min-width: 850px) {
+.badge {
+    float: left;
+    display: inline-block;
+    margin-left: 6rem;
+  }
+    .section.get-help {
+    padding: 4rem 0 0rem;
+
+  }  
+}
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -530,7 +552,7 @@ a:hover img.u-max-full-width {
     display: inline-block;
     margin-left: 0;
     margin-right: 0;
-    min-width: 175px;
+    min-width: 192px;
 }
 div.navigation > h6:nth-child(1) {
   border-top-right-radius: 0px;
