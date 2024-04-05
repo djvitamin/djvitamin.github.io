@@ -466,6 +466,13 @@ a:hover img.u-max-full-width {
     width: 146px;
     height: auto;
   }
+  .footerBadge  {
+ margin-bottom: 5rem;
+}
+  .footerBadge img {
+    width: 205px;
+    height: auto;
+}
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
