@@ -7,7 +7,7 @@
   background-image: linear-gradient(to bottom, rgb(41 92 140 / 40%), rgb(22 43 62)), url(../images/code-background.png);
   background-size: cover;
 
-  
+
 
 }
 
@@ -463,7 +463,7 @@ a:hover img.u-max-full-width {
   }
 
 .badge img {
-    width: 132px;
+    width: 146px;
     height: auto;
   }
 
@@ -498,12 +498,13 @@ a:hover img.u-max-full-width {
     background-position: left -340px; /* Center the image */
  }  
 
+
 /* Bigger than 850 */
 @media (min-width: 850px) {
 .badge {
     float: left;
     display: inline-block;
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
     .section.get-help {
     padding: 4rem 0 0rem;
@@ -511,6 +512,12 @@ a:hover img.u-max-full-width {
   }  
 }
 
+/* Bigger than 1100 */
+@media (min-width: 1100px) {
+.badge {
+    margin-left: 6rem;
+  }
+}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
