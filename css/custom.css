@@ -15,7 +15,9 @@
 h4.type  {
   background-color: #164168;
 }
-
+h4.type.problem {
+    background-color: #a00303;
+}
 h4.type span {
     color: #97b1bd;
 }
@@ -503,8 +505,27 @@ a:hover img.u-max-full-width {
     clip-path: polygon(100% -1%, 100% 72%, 50% 100%, 0 72%, 0 -1%);
     padding: 0 0 2.5rem 0;
     background-position: left -340px; /* Center the image */
- }  
+ } 
 
+
+  /* problem/solution border-radius changes 
+  .category:nth-child(1) > h4 {
+      border-top-right-radius: 0;
+  }
+  .category:nth-child(1) > a.imageThumb {
+    border-bottom-right-radius: 0;
+  }
+  .category:nth-child(2) > h4 {
+      border-top-left-radius: 0;
+  }
+  .category:nth-child(2) > a.imageThumb {
+    border-bottom-left-radius: 0;
+  }
+  */
+
+
+
+}
 
 /* Bigger than 850 */
 @media (min-width: 850px) {
