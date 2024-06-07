@@ -4,16 +4,16 @@
 
 
 
-a.gallery.imageThumb > img {
+a.imageThumb > img {
     transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
     transition-timing-function: ease;
     border-radius: 1rem;
 }
-a.gallery.imageThumb img {
+a.imageThumb img {
 border: solid 8px var(--pageBackground);
 }
 
-a.gallery.imageThumb:hover img {
+a.imageThumb:hover img {
     border: solid 8px var(--accent);
     border-color: var(--accent);
 }

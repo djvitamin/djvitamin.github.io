@@ -295,6 +295,7 @@
     max-width: 100%;
     border-radius: 0;
     top: 0;
+    border-bottom: solid 2px var(--pageBackground);
   }
   #cs-navigation {
     width: 94%;
