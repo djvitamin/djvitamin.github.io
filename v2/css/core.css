@@ -1,0 +1,181 @@
+:root {
+    /*  All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #8BA8F3;
+    --primaryLight: #7EDD50;
+    --accent: #7EDD50;   
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #D8D9E1;
+    --bodyTextColor: #a1a1b4;
+    --bodyTextColorWhite: #fafbfc;
+    --pageBackground: #27272B;
+    --pageBackgroundLighter: #323242;    
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(4.75rem, 7.82vw, 6.25rem) 3rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--pageBackground);
+    font-family: "Roboto", sans-serif;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+/* Hyperlinked text in body */
+.cs-text a {
+    color: var(--accent);
+}
+.cs-text a:hover {
+    color: var(--primary);
+}
+
+
+ /* Applying a display font to selected headings */
+ .cs-title, .cs-h3 {
+    font-family: "Sora", sans-serif;
+}
+
+
+.cs-title {
+    font-optical-sizing: auto;
+    font-size: var(--headerFontSize);
+    font-weight: 800;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 2rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-title span {
+  opacity: 35%;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                  
+
+/* Buttton box */
+
+.cs-link i {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    transition: transform 0.3s;
+    color: var(--bodyTextColor);
+}
+
+/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
+.icon-box {
+    width: 100%;
+    max-width: 39.375rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.icon-box .cs-link {
+    text-decoration: none;
+    padding-right: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+
+.icon-box .cs-link:before {
+    /* circle container */
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--headerColor);
+    border-radius: 1.5rem;
+    opacity: 8%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition:
+        width 0.3s,
+        height 0.3s,
+        border-radius 0.3s;
+}
+.icon-box .cs-wrapper {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    transition: transform 0.3s;
+}
+.icon-box .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+.icon-box .cs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+.icon-box .cs-header {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+}
+.icon-box .cs-link-content {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+}
+
+                                
+                                
