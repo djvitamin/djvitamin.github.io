@@ -22,7 +22,7 @@
         text-align: center;
     }
     #cs-footer-108 .footerBadge img {
-        width: 205px;
+        width: 10rem;
         height: auto;
     }
     #cs-footer-108 .cs-copyright a {
@@ -84,6 +84,9 @@
         display: block;
         /* 20px - 28px */
         margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
+    }
+    #cs-footer-108 .cs-copyright.small {
+        font-size: .5rem;
     }
 }
 /* Tablet - 600px */

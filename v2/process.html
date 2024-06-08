@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Dante Vono: Full-spectrum UX Designer</title>
+  <title>Dante Vono: Portfolio - Skills</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -13,16 +13,22 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">  
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/core.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/hero.css">  
   <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/featherlight.css">
+  <link rel="stylesheet" href="css/featherlight.gallery.css">
   <link rel="stylesheet" href="css/footer.css">
 
 
+  <!-- CSS icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://kit.fontawesome.com/f2d474eb96.js" crossorigin="anonymous"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,6 +37,7 @@
 
 </head>
 <body>
+
 
 <!-- ============================================ -->
 <!--                 Navigation                   -->
@@ -56,20 +63,18 @@
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <!--
                     <li class="cs-li">
-                        <a href="index.html" class="cs-li-link cs-active">
+                        <a href="index.html" class="cs-li-link">
                             Home
                         </a>
                     </li>
-                    -->
                     <li class="cs-li">
                         <a href="skills.html" class="cs-li-link">
                             Skills
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="process.html" class="cs-li-link">
+                        <a href="" class="cs-li-link cs-active">
                             Process
                         </a>
                     </li>
@@ -103,37 +108,35 @@
     </div>
 
 
+
 <!-- ============================================ -->
-<!--                   Content                    -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="sbs-1809">
+<section id="hero-1785">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Main Image-->
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="images/business-card.png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="images/business-card.png">
-                <img loading="lazy" decoding="async" src="images/business-card.png" alt="Dante's business card" width="1600" height="1067">
-            </picture>
-            <!--background Blob-->
-            <img class="cs-splatter" loading="lazy" decoding="async" src="images/business-card-burst.svg" alt="burst background" width="441" height="478">
-        </div>
         <div class="cs-content">
-            <!-- <span class="cs-topper">Dante Vono: Full-spectrum UX Designer</span> -->
-            <!-- <p class="cs-text">I'm a problem-solving, award-winning UX Designer with a focus on Product Design.</p> -->
-            <h5 class="cs-title">I'm a full-spectrum UX Designer of Enterprise &amp; Consumer Digital Products</h5>
-            <h2 class="cs-title">Check out how I use my <a href="skills.html">UX skills</a> and <a href="process.html">design process</a> to deliver <a href="outcomes.html">successful outcomes</a></h2>
-
+            <span class="cs-topper">Iteration for the win</span> 
+            <h1 class="cs-title">My Design Process</h1>
+            <p class="cs-text">
+               Case study to follow. This section is under construction.
+            </p>
         </div>
     </div>
 
-
-</section>
-            
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="images/splatter.svg">
+        <source media="(min-width: 601px)" srcset="images/splatter.svg">
+        <img loading="lazy" decoding="async" src="images/splatter.svg" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>    
                                 
+                                
+
+
+
+                                           
 <!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
@@ -142,17 +145,85 @@
     <div class="cs-container">
         <div class="footerBadge"><img src="images/code-magnifier.png" alt="This site coded by Dante Vono"></div>
         <span class="cs-copyright">Feel free to <a href="mailto:djvono@gmail.com?subject=Saw your Portfolio site">contact me</a> with questions or requests for more examples.</span>
-        <span class="cs-copyright">© 2024 Dante Vono. Business card mockup designed by <a href="http://www.freepik.com" target="_blank">even_popov / Freepik</a></span>
-        
+        <span class="cs-copyright">© 2024 Dante Vono</span>
     </div>
 </footer>
-                
-
+                                
+                                
 <!-- Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script src="js/navigation.js"></script>
 
+                                
+<!-- Lightbox
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script src="js/jquery-1.7.0.min.js"></script>
+<script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/featherlight.gallery.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <script>
+$('a.gallery').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery2').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery3').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery4').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery5').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery6').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery7').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+$('a.gallery8').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    galleryFadeIn: 100,
+    openSpeed: 100,
+    closeSpeed: 100
+});
+
+  </script>                             
+                                
                                 
   
 <!-- End Document

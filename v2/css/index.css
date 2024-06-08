@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-1809 {
-    padding: var(--sectionPadding);
+    padding: clamp(11.75rem, 7.82vw, 13.25rem) 3rem;
     /* 100px - 200px */
     padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
     /* clips anything overflowing */
@@ -28,7 +28,7 @@
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 32.625rem;
+    max-width: 40.625rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
@@ -39,6 +39,37 @@
   #sbs-1809 .cs-text {
     margin-bottom: 1rem;
   }
+#sbs-1809 .cs-title {
+  font-size: clamp(2.5625rem, 3.3vw, 3.65rem);
+  line-height: 1.3;
+  }
+
+ #sbs-1809 h5.cs-title {
+  font-size: clamp(1.6625rem, 2vw, 2.65rem);
+  line-height: 1.4;
+  color: var(--headerColorDarker);
+  } 
+
+
+  
+  #sbs-1809 .cs-title a {
+    color:  var(--accent);
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 350ms;
+  }
+
+
+  #sbs-1809 .cs-title a:hover {
+    color:  var(--pageBackground);
+    background-color: var(--accent);
+    transform: scale(1.08);
+
+  }
+  #sbs-1809 .cs-topper {
+      margin-bottom: 1.75rem;
+    }
+
   #sbs-1809 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
@@ -86,22 +117,12 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-1809 .cs-image-group:before {
-    /* blur effect */
-    content: '';
-    width: 125rem;
-    height: 125rem;
-    margin-right: -28.125rem;
-    background-color: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(20px);
-    position: absolute;
-    display: none;
-    top: -12.5em;
-    right: 50%;
-    transform: skew(40deg);
-    transform-origin: center;
-    z-index: -1;
+
+  /* make the text wrap nice for the intro section */
+  #sbs-1809 .cs-content {
+  text-wrap: pretty;
   }
+
   #sbs-1809 .cs-picture {
     width: auto;
     height: 40.1875em;
@@ -113,17 +134,18 @@
   }
   #sbs-1809 .cs-picture img {
     width: auto;
-    height: 100%;
+    height: 90%;
     object-fit: contain;
   }
   #sbs-1809 .cs-splatter {
-    width: 48.875em;
+    width: 50.875em;
     height: auto;
     object-fit: cover;
     position: absolute;
-    bottom: -2.5em;
-    right: 5.5em;
+    bottom: 0.5em;
+    right: -7.5em;
     z-index: -2;
+    filter: invert(21%) sepia(6%) saturate(324%) hue-rotate(201deg) brightness(89%) contrast(90%);
   }
   #sbs-1809 .cs-graphic {
     width: 100%;
@@ -156,7 +178,7 @@
     display: block;
   }
   #sbs-1809 .cs-content {
-    width: 51%;
+    width: 60%;
   }
 }
                                 
