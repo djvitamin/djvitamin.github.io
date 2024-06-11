@@ -33,24 +33,50 @@
   #sbs-1443 h3.cs-title {
     font-size: clamp(1.4375rem, 3.2vw, 1.9625rem);
     font-weight: 500;
+    margin: 0 0 4rem 0;
+    max-width: inherit;
   }
-  .cs-text.subhead {
+  #sbs-1443 .cs-h4 {
     font-weight: 800;
     font-size: 1.4rem;
     color: var(--headerColor);
+    margin: 0 0 1rem 0;
   }
   #sbs-1443 .cs-container-title > h2 > span {
     width: 3rem;
     height: 3rem;
     margin: 0 0.3rem 0 0;
     border-radius: 50%;
-    background-color: var(--pageBackgroundLighter);
+    background-color: var(--primary);
     display: inline-block;
     padding: 0.5rem 0 0 0;
     text-align: center;
+    color: var(--pageBackground);
+    font-size: 2.5rem;
+    line-height: 2rem;
   }
 
-    #sbs-1443 .cs-h4  {
+/* Improving text wrap */
+  .cs-h4, .cs-text, .cs-li-text {
+    text-wrap: pretty;
+  }
+
+  /* Thumbnail layout stacked for mobile */
+  .thumbnail-grid-row, .thumbnail-grid-column {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  #sbs-1443 .thumbnail-grid-column .cs-picture {
+  height: fit-content;
+  width: auto;
+  min-height: inherit;
+}
+
+
+
+    #sbs-1443 .cs-h5  {
     font-weight: 800;
     font-size: 1.3rem;
     color: var(--headerColor);
@@ -89,10 +115,19 @@
   #sbs-1443 .cs-text:last-of-type {
     margin-bottom: 0rem;
   }
+  .subsection-text .cs-text {
+    font-size: 1.2rem;
+  }
+#sbs-1443 ol.cs-text {
+    padding-inline-start: 1.2rem;
+  }
+  #sbs-1443 ol.cs-text li {
+    margin-bottom: 0.7rem;
+}
   #sbs-1443 .cs-card-group {
     width: 100%;
     max-width: 39.375rem;
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 2rem 0;
     padding: 0;
     display: flex;
     align-items: flex-start;
@@ -197,21 +232,58 @@
   #sbs-1443 .cs-picture {
     width: 100%;
     max-width: 46.625rem;
-    min-height: 22.625rem;
-    border-radius: 1.5rem;
+    min-height: fit-content;  /* min-height: 22.625rem; */
+    border-radius: .5rem;
     /* clips img tag corners */
     overflow: hidden;
     display: block;
     position: relative;
     z-index: 1;
     /* temp for build */
-    background-color: gray;
+    background-color: #F3F3F3;
   }
+
+  /* adjustments for the Figma section */
+
+  #sbs-1443 .cs-picture.transparent {
+    background-color: transparent;
+  }
+
+  #sbs-1443 .thumbnail-grid-column.figma .cs-picture {
+    border-radius: 0;
+  }
+
+  #sbs-1443 .thumbnail-grid-column.figma ul.cs-card-group {
+    max-width: 47rem;
+    margin-left: 0;
+  }
+  .figma .cs-icon {
+    color: var(--primary);
+    text-align: center;
+  }
+
+  #sbs-1443 .cs-li-picture.positive {
+    background-color: #389318;
+  }
+
+  #sbs-1443 .cs-li-picture.positive i {
+    color: var(--pageBackground);
+  }
+
+    #sbs-1443 .cs-li-picture.negative {
+    background-color: #e52545;
+  }
+
+  #sbs-1443 .cs-li-picture.negative i {
+    color: var(--pageBackground);
+  }
+
+
   #sbs-1443 .cs-picture img {
     width: 100%;
     height: 100%;
     display: block;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     object-fit: contain;
@@ -232,7 +304,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     }
 
     .cs-icon .right {
@@ -246,6 +318,24 @@
         margin-bottom: 2rem;
     }
 
+/* Smaller thumbnails */
+.thumbnail-grid-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 65%;
+}
+.thumbnail-grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#sbs-1443 .thumbnail-grid-column .cs-picture {
+  height: fit-content;
+  width: auto;
+  min-height: inherit;
+}
+
 /* Hanging indent for numbers */
     #sbs-1443 {
     padding-left: 8rem;
@@ -255,7 +345,7 @@
   } 
 
   #sbs-1443 .cs-card-group {
-    margin-left: -4.2rem;
+    margin-left: -1rem;
   }
 
     #sbs-1443 .cs-container-title > h2 > span {
@@ -263,6 +353,8 @@
     height: 4.5rem;
     margin: 0 0.7rem 0 0;
     padding: 0.5rem 0 0 0;
+    font-size: 3rem;
+    line-height: normal;
   }
 
     #sbs-1443 .cs-container-title {
@@ -277,6 +369,7 @@
   #sbs-1443 .cs-picture {
     height: fit-content;
     width: 65%;
+    max-height: 32rem;
   }
 }
                                 

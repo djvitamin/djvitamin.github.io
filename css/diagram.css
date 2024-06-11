@@ -1,0 +1,91 @@
+/*-- -------------------------- -->
+<---           Footer           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains hover state */
+@media only screen and (min-width: 0rem) {
+    #cs-process-diagram {
+        padding: 6em 1em 0em 1em;
+    }
+    #cs-process-diagram .cs-container {
+        width: 100%;
+        max-width: 80em;
+        margin: auto;
+    }
+    #cs-process-diagram .cs-ul {
+        padding: 0;
+        margin: auto;
+        display: flex;
+        /* make flexbox arrange top to bottom */
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    #cs-process-diagram img {
+    object-fit: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+    }  
+    #cs-process-diagram .cs-li {
+        list-style: none;
+        text-align: center;
+        margin: 0;
+    }
+    #cs-process-diagram .cs-copyright {
+        font-size: 0.9375rem;
+        line-height: 1.5em;
+        margin-top: 1.25rem;
+        color: #a0a3bd;
+        display: block;
+        /* send to first position at the bottom */
+        order: 1;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+    #cs-process-diagram .cs-link {
+        /* 15px - 17px */
+        font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-process-diagram .cs-link:hover:before {
+        width: 100%;
+    }
+    #cs-process-diagram .cs-link:before {
+        /* top right box */
+        content: "";
+        width: 0%;
+        height: 0.1875rem;
+        background: var(--headerColor);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-process-diagram .cs-ul {
+        flex-direction: row;
+        /* push everything to the left */
+        justify-content: flex-start;
+        /* 44px - 88px */
+        gap: clamp(2.75rem, 7vw, 5.5rem);
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+
+    #cs-process-diagram {
+        padding: 6em 6em 0em 6em;
+    }
+}
+
+                                

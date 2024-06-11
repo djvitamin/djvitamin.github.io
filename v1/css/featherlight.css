@@ -61,9 +61,8 @@
 		max-height: 95%;
 
 		/* styling */
-		background: #d0d0d7;
+		background: #fff;
 		cursor: auto;
-		border-radius: 0.6rem;
 
 		/* reset white-space wrapping */
 		white-space: normal;
@@ -90,14 +89,9 @@
 		cursor: pointer;
 		text-align: center;
 		font-family: Arial, sans-serif;
-		background: rgb(95 90 90 / 20%); /* Set the background in case it overlaps the content */
-		color: #878794;
-	}
-
-	.featherlight .featherlight-close-icon:hover {
-		/* hover */
-		background: rgb(95 90 90 / 50%); /* Set the background in case it overlaps the content */
-		color: #fff;
+		background: #fff; /* Set the background in case it overlaps the content */
+		background: rgba(255, 255, 255, 0.3);
+		color: #000;
 	}
 
 

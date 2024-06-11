@@ -68,6 +68,10 @@ a.imageThumb:hover img {
   #stats-1687 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  .cs-title span {
+  opacity: 35%;
+}
+
   #stats-1687 .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;

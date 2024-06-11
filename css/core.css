@@ -46,9 +46,14 @@ body {
 /* Hyperlinked text in body */
 .cs-text a {
     color: var(--accent);
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 350ms;
 }
 .cs-text a:hover {
-    color: var(--primary);
+    color: var(--pageBackground);
+    background-color: var(--accent);
+    transform: scale(1.02);
 }
 
 
@@ -65,14 +70,11 @@ body {
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
 }
 
-.cs-title span {
-  opacity: 35%;
-}
 
 .cs-text {
     font-size: var(--bodyFontSize);
