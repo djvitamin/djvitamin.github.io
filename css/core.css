@@ -47,8 +47,7 @@ body {
 .cs-text a {
     color: var(--accent);
     text-decoration: none;
-    display: inline-block;
-    transition: transform 350ms;
+    transition: all 150ms;
 }
 .cs-text a:hover {
     color: var(--pageBackground);

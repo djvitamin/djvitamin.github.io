@@ -28,8 +28,7 @@
     #cs-footer-108 .cs-copyright a {
       color: var(--accent);
     text-decoration: none;
-    display: inline-block;
-    transition: transform 350ms;
+    transition: transition: all 150ms;
     }
     #cs-footer-108 .cs-copyright a:hover {
         color: var(--pageBackground);

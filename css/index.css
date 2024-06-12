@@ -13,6 +13,12 @@
     position: relative;
     z-index: 1;
   }
+  h5 span.spectrum-effect {
+     background: rgb(255,45,44);
+    background: linear-gradient(90deg, rgba(255,45,44,1) 0%, rgba(255,160,44,1) 20%, rgba(255,255,44,1) 39%, rgba(86,232,79,1) 58%, rgba(45,58,180,1) 80%, rgba(187,84,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
   #sbs-1809 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
@@ -42,12 +48,14 @@
 #sbs-1809 .cs-title {
   font-size: clamp(2.5625rem, 3.3vw, 3.65rem);
   line-height: 1.3;
+   margin: 0 0 3rem 0;
   }
 
  #sbs-1809 h5.cs-title {
   font-size: clamp(1.6625rem, 2vw, 2.65rem);
   line-height: 1.4;
   color: var(--headerColorDarker);
+   margin-bottom: 3rem;
   } 
 
 
@@ -55,8 +63,7 @@
   #sbs-1809 .cs-title a {
     color:  var(--accent);
     text-decoration: none;
-    display: inline-block;
-    transition: transform 350ms;
+    transition: all 150ms;
   }
 
 
@@ -74,17 +81,17 @@
     margin-bottom: 2rem;
   }
   #sbs-1809 .cs-button-solid {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-decoration: none;
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: var(--accent);
     min-width: 9.375rem;
     padding: 0 1.5rem;
-    background-color: var(--primary);
+    background-color: var(--pageBackgroundLighter);
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
@@ -92,12 +99,16 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
+   #sbs-1809 .cs-button-solid:hover {
+    color: var(--pageBackground);
+
+   }
   #sbs-1809 .cs-button-solid:before {
     content: '';
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: var(--primary);
     opacity: 1;
     top: 0;
     left: 0;
@@ -134,7 +145,7 @@
   }
   #sbs-1809 .cs-picture img {
     width: auto;
-    height: 90%;
+    height: 81%;
     object-fit: contain;
   }
   #sbs-1809 .cs-splatter {
@@ -142,7 +153,7 @@
     height: auto;
     object-fit: cover;
     position: absolute;
-    bottom: 0.5em;
+    bottom: 2.5em;
     right: -7.5em;
     z-index: -2;
     filter: invert(21%) sepia(6%) saturate(324%) hue-rotate(201deg) brightness(89%) contrast(90%);
@@ -162,8 +173,8 @@
     display: none;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
   #sbs-1809 .cs-container {
     max-width: 80rem;
     flex-direction: row;
@@ -178,7 +189,7 @@
     display: block;
   }
   #sbs-1809 .cs-content {
-    width: 60%;
+    width: 70%;
   }
 }
                                 
