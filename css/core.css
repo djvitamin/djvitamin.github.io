@@ -46,7 +46,7 @@ body {
 /* Hyperlinked text in body */
 .cs-text a {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
     transition: all 150ms;
 }
 .cs-text a:hover {

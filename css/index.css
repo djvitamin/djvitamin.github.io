@@ -62,7 +62,7 @@
   
   #sbs-1809 .cs-title a {
     color:  var(--accent);
-    text-decoration: none;
+    text-decoration: underlines;
     transition: all 150ms;
   }
 

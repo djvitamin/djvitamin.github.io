@@ -27,7 +27,7 @@
     }
     #cs-footer-108 .cs-copyright a {
       color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
     transition: transition: all 150ms;
     }
     #cs-footer-108 .cs-copyright a:hover {
