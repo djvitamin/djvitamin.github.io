@@ -249,21 +249,21 @@
     background-color: transparent;
   }
 
-  #sbs-1443 .thumbnail-grid-column.figma .cs-picture {
+  #sbs-1443 .thumbnail-grid-column .cs-picture.no-border-radius {
     border-radius: 0;
   }
 
-  #sbs-1443 .thumbnail-grid-column.figma ul.cs-card-group {
+  #sbs-1443 .thumbnail-grid-column.down-arrow ul.cs-card-group {
     max-width: 47rem;
     margin-left: 0;
   }
-  .figma .cs-icon {
+  .down-arrow .cs-icon {
     color: var(--primary);
     text-align: center;
   }
 
   #sbs-1443 .cs-li-picture.positive {
-    background-color: #389318;
+    background-color: #6bb551;
   }
 
   #sbs-1443 .cs-li-picture.positive i {
